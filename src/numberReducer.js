@@ -4,6 +4,8 @@ const numberReducer = (state, action) => {
             return ++state;
         case 'DECRMENT':
             return --state;
+            default:
+                return;
     }
 
 }
