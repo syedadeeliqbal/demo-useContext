@@ -1,11 +1,11 @@
-import React, {useState} from 'react';
+import React, {useState, useReducer} from 'react';
 import './App.css';
 import Parent from './Parent';
 import ValueContext from './ValueContext';
 
 function App() {
-  let [number, setNumber] = useState(25);
-  let value = 99;
+  let value = useState(99);
+  let number = useReducer('INCREMENT');
   return (
     <ValueContext.Provider value = {value}>
       <div >
